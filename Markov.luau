@@ -191,4 +191,6 @@ end
 	return Map
 end
 
+Markov.DefaultTokenizer = DefaultTokenizer
+
 return table.freeze(Markov)
