@@ -174,7 +174,7 @@ end
 
 	const KeyCount = buffer.readu32(Buf, Cursor)
 	Cursor += 4
-	local Map: {[string]: {string}} = {}
+	const Map: {[string]: {string}} = {}
 	for _ = 1, KeyCount do
 		const Key = Strings[buffer.readu32(Buf, Cursor) + 1]
 		Cursor += 4
